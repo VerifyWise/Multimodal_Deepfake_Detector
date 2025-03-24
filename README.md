@@ -8,7 +8,7 @@
 ## 🚀 Key Features
 ✅ Detect deepfakes across multiple media formats.  
 ✅ Generates detailed PDF reports for analysis.  
-✅ User-friendly interface with animations and mascot assistance.  
+✅ User-friendly interface with animations.  
 ✅ Secure login with data stored in an SQLite database.  
 
 ---
@@ -32,19 +32,27 @@ cd Multimodal_Deepfake_Detector
 # Install required packages
 pip install -r requirements.txt
 
-# Run the application
-streamlit run app.py
+## 📂 **Folder Structure**
+
 📦 Multimodal_Deepfake_Detector
-┣ 📂 models
-┃ ┣ 📜 xception_model.h5       # Audio Model
-┃ ┣ 📜 cnn-lstm-adversarial-trained.h5   # Video Model
-┃ ┣ 📜 image_model.h5          # Image Model
-┣ 📂 pages
-┃ ┣ 📜 upload.py               # File upload and prediction
-┃ ┣ 📜 report.py               # PDF report generation
-┣ 📜 app.py                    # Main Streamlit app
-┣ 📜 requirements.txt          # Project dependencies
-┗ 📜 README.md                  # Project overview
+┣ 📜 .gitattributes                # Git configuration for attributes
+┣ 📜 .gitignore                    # Files and folders to ignore in Git
+┣ 📜 README.md                     # Project documentation
+┣ 📜 __init__.py                   # Initializes Python package
+┣ 📜 app.py                        # Main Streamlit application
+┣ 📜 audio_report.pdf              # Sample audio report generated
+┣ 📜 contact.db                    # SQLite database for user data
+┣ 📜 contact_database_checking.py  # Script to validate contact database
+┣ 📜 database_checking.py          # Script to validate user database
+┣ 📜 download_model.py             # Script to download necessary models
+┣ 📜 frame_sample.png              # Sample frame from video
+┣ 📜 image_report.pdf              # Sample image report generated
+┣ 📜 spectrogram.png               # Spectrogram analysis of audio
+┣ 📜 test_audio.wav                # Sample audio file for testing
+┣ 📜 thumbnail.jpg                 # Thumbnail image for interface
+┣ 📜 users.db                       # SQLite database storing user info
+┣ 📜 video_report.pdf               # Sample video report generated
+┗ 📜 video_thumbnail.jpg            # Thumbnail for video preview
 
 ## 📸 Screenshots
 | Home Page                  | Upload Section              |
